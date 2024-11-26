@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  html {
+    scroll-behavior: smooth; /* Provides smooth scrolling for anchor links */
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    z-index: 1000;
+  }
+  body {
+    padding-top: 60px; /* Avoid content being hidden behind the fixed header */
+  }
+   
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+  }
+   
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+   
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+   
+  header nav ul li {
+    margin-left: 20px;
+  }
+   
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+   
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+  }
+   
+  .hero img {
+    width: 150px;
+    border-radius: 50%;
+  }
+   
+  .hero .intro {
+    margin-left: 20px;
+  }
+   
+  .hero h1 {
+    margin: 0;
+  }
+   
+  /* Hobbies Section */
+  .hobbies, .skills, .gallery, .reviews {
+    padding: 20px;
+    text-align: center;
+  }
+   
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+   
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+  }
+   
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+   
+  /* Gallery */
+  .images img {
+    width: 100;
+    height: auto;
+    margin: 10px 0;
+  }
+   
+  /* Contact Section */
+  footer {
+    padding: 40px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+   
+  footer h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+   
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+   
+  .contact-form, .contact-info {
+    flex: 1 1 300px;
+    max-width: 500px;
+  }
+   
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+   
+  .contact-form textarea {
+    min-height: 100px;
+  }
+   
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+   
+  .contact-info p {
+    margin: 10px 0;
+  }
+   
+  .contact-info .socials a {
+    display: block;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+  }
+   
+  .contact-info .socials a:hover {
+    text-decoration: underline;
+  }
+   
+  footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+   
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+   
+    .contact-form, .contact-info {
+      max-width: 100%;
+    }
+  }
